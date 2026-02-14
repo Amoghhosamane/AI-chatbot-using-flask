@@ -20,11 +20,18 @@ A responsive, modern chatbot application built with Flask and TensorFlow.
    ```
 
 ## Running the Application
-1. Start the Flask server:
-   ```bash
-   py app.py
-   ```
-2. Open your browser and go to `http://127.0.0.1:5000`.
+### 1. Web Mode (Recommended)
+Start the Flask server for the ChatGPT-style interface:
+```bash
+py app.py
+```
+Open your browser and go to `http://127.0.0.1:5000`.
+
+### 2. Terminal Mode
+Chat directly in your terminal without a browser:
+```bash
+py chat_cli.py
+```
 
 ## Project Structure
 - `app.py`: The main Flask application and routing.
