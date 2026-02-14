@@ -1,43 +1,35 @@
-# Flask Chatbot - ChatGPT Style
+# AI Chatbot using Flask
 
-This is a chatbot application built with Flask and TensorFlow, featuring a premium UI inspired by ChatGPT.
+A responsive, modern chatbot application built with Flask and TensorFlow.
 
-## Project Structure
+## Features
+- Deep Learning based intent classification using TensorFlow.
+- Natural Language Processing with NLTK.
+- Clean, ChatGPT-inspired user interface.
+- Context-aware conversation handling.
+- Mobile-friendly design.
 
-- `app.py`: The Flask web server.
-- `chatbot_engine.py`: Contains the NLP processing, model training, and prediction logic.
-- `intents.json`: The knowledge base for the chatbot (intents and responses).
-- `requirements.txt`: List of Python dependencies.
-- `templates/`: HTML templates.
-- `static/`: CSS and JavaScript files for the premium frontend.
+## Prerequisites
+- Python 3.x (Use `py` launcher on Windows)
 
-## Setup Instructions
-
-1. **Install Dependencies**:
-   Open your terminal in the project directory and run:
+## Installation
+1. Clone the repository.
+2. Install the required dependencies:
    ```bash
-   pip install -r requirements.txt
+   py -m pip install -r requirements.txt
    ```
 
-2. **Train the Model**:
-   The first time you run the application, it will automatically train the model based on `intents.json`.
-   If you want to re-train after modifying intents, you can run:
-   ```bash
-   py chatbot_engine.py
-   ```
-
-3. **Run the Application**:
-   Start the Flask server:
+## Running the Application
+1. Start the Flask server:
    ```bash
    py app.py
    ```
+2. Open your browser and go to `http://127.0.0.1:5000`.
 
-4. **Access the Chatbot**:
-   Open your browser and navigate to `http://127.0.0.1:5000`.
-
-## Features
-
-- **ChatGPT-like UI**: Sleek dark theme with a sidebar, message bubbles, and smooth animations.
-- **Context-Aware**: Supports intent context handling (e.g., following up on food delivery).
-- **Responsive**: Adapts to different screen sizes.
-- **Interactive**: Real-time typing indicators and auto-resizing input box.
+## Project Structure
+- `app.py`: The main Flask application and routing.
+- `chatbot_engine.py`: Logic for training the model and processing user input.
+- `intents.json`: JSON file containing the training data (intents, patterns, and responses).
+- `static/`: Frontend assets (CSS and JavaScript).
+- `templates/`: HTML templates for the web interface.
+- `requirements.txt`: Python package dependencies.
