@@ -1,4 +1,5 @@
 flask
 nltk
-tensorflow
+tensorflow-cpu
 numpy
+gunicorn
